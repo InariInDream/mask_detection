@@ -1,7 +1,7 @@
 function [out_filter] = RGB_filter(image,choice)
-% choice 0：中值滤波    1：邻域平均滤波
+% choice 1：中值滤波    0：邻域平均滤波
 % 对三通道分离后分别滤波，可选择中值或者邻域平均滤波
-% R通道
+    % R通道
     R = image(:,:,1);
     %%G通道
     G = image(:,:,2);
